@@ -347,18 +347,28 @@ footer .socials li a:hover {
     text-decoration: underline;
 }
 
-section#formations .formation {
-    margin-bottom: 20px;
+/* Section Formations */
+.formations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-section#formations .formation h3 {
-    font-size: 1.8em;
+.formation-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formation-card h3 {
+    margin-bottom: 10px;
     color: #333;
-    margin-bottom: 5px;
+    font-size: 1.5em;
 }
 
-section#formations .formation p {
-    font-size: 1.2em;
+.formation-card p {
     color: #666;
 }
 
