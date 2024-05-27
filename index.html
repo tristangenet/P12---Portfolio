@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Développeur Web Freelance</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -37,16 +38,27 @@
     <section id="services">
         <div class="container">
             <h2>Mes Services</h2>
-            <div class="services">
-                <div class="service">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Création de Sites Web</h3>
                     <p>Des sites web modernes et responsives pour tous vos besoins.</p>
                 </div>
-                <div class="service">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
                     <h3>Développement Front-End</h3>
                     <p>Intégration et développement avec HTML, CSS, JavaScript et React.</p>
                 </div>
-                <!-- Autres services -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Design Responsive</h3>
+                    <p>Des interfaces adaptatives pour une expérience utilisateur optimale sur tous les appareils.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3>Optimisation SEO</h3>
+                    <p>Amélioration de la visibilité de votre site web sur les moteurs de recherche.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -57,7 +69,7 @@
             <div class="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="Capture-d’écran-2024-05-23-à-16.26.41.webp" alt="Projet 1">
+                        <img src="assets/images/Capture-d’écran-2024-05-23-à-16.26.41.webp" alt="Projet 1">
                         <div class="carousel-caption">
                             <h3>Projet 1</h3>
                             <p>Description du projet 1.</p>
@@ -65,18 +77,10 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="projet2.jpg" alt="Projet 2">
+                        <img src="assets/images/projet2.jpg" alt="Projet 2">
                         <div class="carousel-caption">
                             <h3>Projet 2</h3>
                             <p>Description du projet 2.</p>
-                            <a href="https://github.com/votrecompte/projet2" class="btn" target="_blank">Voir sur GitHub</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="projet2.jpg" alt="Projet 2">
-                        <div class="carousel-caption">
-                            <h3>Projet 3</h3>
-                            <p>Description du projet 3.</p>
                             <a href="https://github.com/votrecompte/projet2" class="btn" target="_blank">Voir sur GitHub</a>
                         </div>
                     </div>
@@ -101,22 +105,26 @@
     <section id="skills">
         <div class="container">
             <h2>Mes Compétences</h2>
-            <div class="skills">
-                <div class="skill">
-                    <div class="circle" data-percentage="90"></div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
                     <h3>HTML</h3>
+                    <p>Niveau de maîtrise : 90%</p>
                 </div>
-                <div class="skill">
-                    <div class="circle" data-percentage="85"></div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
                     <h3>CSS</h3>
+                    <p>Niveau de maîtrise : 85%</p>
                 </div>
-                <div class="skill">
-                    <div class="circle" data-percentage="80"></div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
                     <h3>JavaScript</h3>
+                    <p>Niveau de maîtrise : 80%</p>
                 </div>
-                <div class="skill">
-                    <div class="circle" data-percentage="75"></div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
                     <h3>React</h3>
+                    <p>Niveau de maîtrise : 75%</p>
                 </div>
             </div>
         </div>
@@ -146,6 +154,6 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

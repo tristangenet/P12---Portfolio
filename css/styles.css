@@ -55,7 +55,7 @@ section {
 }
 
 section#accueil {
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('assets/images/background.jpg') no-repeat center center/cover;
     height: 100vh;
     color: white;
     display: flex;
@@ -119,28 +119,32 @@ h2 {
     color: #333;
 }
 
-.services, .projects, .skills {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.service, .project, .skill {
+.service-card {
     background: white;
-    margin: 20px;
+    border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-basis: 45%;
-    border-radius: 10px;
     text-align: center;
 }
 
-.service h3, .project h3, .skill h3 {
+.service-icon {
+    font-size: 3em;
+    color: #e8491d;
+    margin-bottom: 10px;
+}
+
+.service h3 {
     margin-bottom: 10px;
     color: #333;
 }
 
-.service p, .project p, .skill p {
+.service p {
     color: #666;
 }
 
@@ -169,6 +173,26 @@ h2 {
     transform: translate(-50%, -50%);
     font-size: 1.2em;
     color: #333;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-icon {
+    font-size: 3em;
+    color: #e8491d;
+    margin-bottom: 10px;
 }
 
 .carousel {
