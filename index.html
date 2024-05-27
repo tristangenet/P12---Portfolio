@@ -54,20 +54,38 @@
     <section id="portfolio">
         <div class="container">
             <h2>Mon Portfolio</h2>
-            <div class="projects">
-                <div class="project">
-                    <img src="Capture-d’écran-2024-05-23-à-16.26.41.webp" alt="Projet 1">
-                    <h3>Projet 1</h3>
-                    <p>Description du projet 1.</p>
-                    <a href="https://github.com/votrecompte/projet1" class="btn" target="_blank">Voir sur GitHub</a>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Capture-d’écran-2024-05-23-à-16.26.41.webp" alt="Projet 1">
+                        <div class="carousel-caption">
+                            <h3>Projet 1</h3>
+                            <p>Description du projet 1.</p>
+                            <a href="https://github.com/votrecompte/projet1" class="btn" target="_blank">Voir sur GitHub</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="projet2.jpg" alt="Projet 2">
+                        <div class="carousel-caption">
+                            <h3>Projet 2</h3>
+                            <p>Description du projet 2.</p>
+                            <a href="https://github.com/votrecompte/projet2" class="btn" target="_blank">Voir sur GitHub</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="projet2.jpg" alt="Projet 2">
+                        <div class="carousel-caption">
+                            <h3>Projet 3</h3>
+                            <p>Description du projet 3.</p>
+                            <a href="https://github.com/votrecompte/projet2" class="btn" target="_blank">Voir sur GitHub</a>
+                        </div>
+                    </div>
+                    <!-- Autres projets -->
                 </div>
-                <div class="project">
-                    <img src="Capture-d’écran-2024-05-23-à-16.26.41.webp" alt="Projet 2">
-                    <h3>Projet 2</h3>
-                    <p>Description du projet 2.</p>
-                    <a href="https://github.com/votrecompte/projet2" class="btn" target="_blank">Voir sur GitHub</a>
+                <div class="carousel-controls">
+                    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
                 </div>
-                <!-- Autres projets -->
             </div>
         </div>
     </section>
