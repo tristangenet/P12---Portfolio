@@ -16,19 +16,22 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    position: relative;
 }
 
 header nav {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
 header nav h1 {
     margin: 10px 0;
 }
 
-header nav ul {
+header .nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -36,17 +39,17 @@ header nav ul {
     flex-wrap: wrap;
 }
 
-header nav ul li {
+header .nav-links li {
     margin: 0 15px;
 }
 
-header nav ul li a {
+header .nav-links li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-header nav ul li a:hover {
+header .nav-links li a:hover {
     text-decoration: underline;
 }
 
@@ -55,7 +58,7 @@ section {
 }
 
 section#accueil {
-    background: url('assets/images/background.jpg') no-repeat center center/cover;
+    background: url('../assets/images/banner.webp') no-repeat center center/cover;
     height: 100vh;
     color: white;
     display: flex;
@@ -344,18 +347,31 @@ footer .socials li a:hover {
     text-decoration: underline;
 }
 
+section#formations .formation {
+    margin-bottom: 20px;
+}
+
+section#formations .formation h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+section#formations .formation p {
+    font-size: 1.2em;
+    color: #666;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
+    .nav-links {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    nav ul li {
+    .nav-links li {
         margin: 10px 0;
-    }
-
-    .service, .project, .skill {
-        flex-basis: 100%;
     }
 
     .carousel-item img {
