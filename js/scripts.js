@@ -49,14 +49,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
 });
 
-// Pourcentage de compétences
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.circle').forEach(circle => {
-        const percentage = circle.getAttribute('data-percentage');
-        circle.style.setProperty('--percentage', percentage);
-    });
-});
-
 // Carrousel
 let currentIndex = 0;
 
